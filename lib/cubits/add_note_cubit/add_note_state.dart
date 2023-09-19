@@ -5,12 +5,12 @@ abstract class AddNoteState {}
 
 class AddNoteInitial extends AddNoteState {}
 
-class AddNoteLoading extends AddNoteCubit {}
+class AddNoteLoading extends AddNoteState {}
 
-class AddNoteSuccess extends AddNoteCubit {}
+class AddNoteSuccess extends AddNoteState {}
 
-class AddNoteFailure extends AddNoteCubit {
-  final String errorMessage;
+class AddNoteFailure extends AddNoteState {
+  final String errMessage;
 
-  AddNoteFailure(this.errorMessage);
+  AddNoteFailure(this.errMessage);
 }
